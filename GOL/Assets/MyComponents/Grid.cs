@@ -84,7 +84,7 @@ public class Grid : MonoBehaviour
 		cells [4, 2].isAliveNext = true;
 		cells [4, 3].isAliveNext = true;
 	}
-    
+
 	// Update is called once per fram
 	void Update ()
 	{
@@ -97,7 +97,7 @@ public class Grid : MonoBehaviour
 
 	public void PlayOrPause ()
 	{
-		
+
 	}
 
 	public void Clear ()
@@ -107,7 +107,7 @@ public class Grid : MonoBehaviour
 
 	public void Randomize ()
 	{
-		
+
 	}
 
 	public int GetPopulationCount ()

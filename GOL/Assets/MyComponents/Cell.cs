@@ -12,13 +12,13 @@ public class Cell : MonoBehaviour {
 	public void UpdateIsAlive() {
 		isAlive = isAliveNext;
 	}
-    // Use this for initializatio
-    void Start() {
-		
-    }
-    
-    // Update is called once per fram
-    void Update() {
+	// Use this for initializatio
+	void Start() {
+
+	}
+
+	// Update is called once per fram
+	void Update() {
 		if (isAlive == true) {
 			scaleFactor = 1;
 			transform.localScale = Vector3.one * scaleFactor;
@@ -28,5 +28,5 @@ public class Cell : MonoBehaviour {
 			transform.localScale = Vector3.one * scaleFactor;
 			Utilities.ChangeCellColor (this, Color.red);
 		}
-    }
+	}
 }
