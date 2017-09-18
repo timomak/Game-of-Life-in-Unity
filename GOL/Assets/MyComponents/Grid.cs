@@ -17,6 +17,10 @@ public class Grid : MonoBehaviour
 	public int generations = 0;
 	public int population = 0;
 	private int numLays = 5;
+	public int minStayAlive = 6;
+	public int maxStayAlive = 12;
+	public int minRevive = 5;
+	public int maxRevive = 8;
 
 	private void Evolve() {
 		foreach (Cell cell in cells) {
@@ -33,15 +37,13 @@ public class Grid : MonoBehaviour
 
 						Cell cell = cells [col, row, lays];
 
-						if (cell.IsAlive ()) {
-
-							if (numAliveNeighbors < 2 || numAliveNeighbors > 3) {
+						if (cell.IsAlive()) {
+							if (numAliveNeighbors < minStayAlive || numAliveNeighbors > maxStayAlive) {
 								cell.isAliveNext = false;
 							} else {
 								cell.isAliveNext = true;
 							}
-
-						} else if (!cell.IsAlive () && numAliveNeighbors == 3) {
+						} else if (!cell.IsAlive() && numAliveNeighbors >= minStayAlive && numAliveNeighbors <= maxStayAlive) {
 							cell.isAliveNext = true;
 						}
 					}

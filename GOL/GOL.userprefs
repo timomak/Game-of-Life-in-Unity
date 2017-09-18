@@ -1,9 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyComponents/Cell.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyComponents/Grid.cs">
     <Files>
       <File FileName="Assets/MyComponents/Cell.cs" Line="1" Column="1" />
-      <File FileName="Assets/MyComponents/Grid.cs" Line="128" Column="1" />
+      <File FileName="Assets/MyComponents/Grid.cs" Line="48" Column="8" />
+      <File FileName="Assets/Components/UIPlayButton.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
